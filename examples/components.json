@@ -1,0 +1,84 @@
+{
+	"components": [
+		{
+			"id" : "jobapply.jobs.api",
+			"title" : "Job Apply Jobs API",
+			"description" : "Surface job details to job apply UI",
+			"depends-on" : [{
+				"target" : "internal.emplyment.api",
+				"description" : "blah"
+			}]
+		},
+
+		{			
+			"id" : "internal.emplyment.api",
+			"title" : "Internal Employment API",
+			"description" : "Provides Job Resources"
+		},
+
+		{
+			"id" : "jobaply.api",
+			"title" : "Job Apply API",
+			"description" : "Experience API for desktop job apply UI",
+			"depends-on":[
+				{
+					"target" : "appliction.api",
+					"description" : "Posts job application to"
+				},
+				{
+					"target" : "auth.api"
+				},
+				{
+					"target" : "blobstore.api"
+				},
+				{
+					"target" : "profile.enrichment.api"
+				},
+				{
+					"target" : "profile.api"
+				},
+				{
+					"target" : "candidate.api"
+				},
+				{
+					"target" : "employment.api.public"
+				}
+			]
+		},
+
+		{
+			"id" : "appliction.api",
+			"title" : "Public Application API"
+		},
+
+		{
+			"id":"auth.api",
+			"title" : "Auth API"
+		},
+
+		{
+			"id":"blobstore.api",
+			"title": "Blobstore API"
+		},
+
+		{
+			"id" : "profile.enrichment.api",
+			"title" : "Profile Enrichment API"
+		},
+
+		{
+			"id" : "profile.api",
+			"title" : "Profile API"
+		},
+
+		{
+			"id" : "candidate.api",
+			"title" : "Candidate API"
+		},
+
+		{
+			"id" : "employment.api.public",
+			"title" : "Publich Employment API"
+		}
+	]
+}
